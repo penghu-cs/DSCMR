@@ -1,0 +1,1 @@
+In this work, there are two sub-networks, one for image modality and the other for text modality. The convolutional layers have the same configuration with 19-layer VGGNet [29] for image sub-network and the sentence CNN [37] for text sub-network as mentioned in Section 3.2.

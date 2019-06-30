@@ -11,7 +11,7 @@ Liangli Zhen*, Peng Hu*, Xu Wang, Dezhong Peng, [Deep Supervised Cross-modal Ret
 ![Result](pascal_sentence_results.png)-->
 ## Result
 Performance comparison in terms of mAP scores on the NUS-WIDE-10K dataset. The highest score is shown in boldface.
-<img src="NUS.jpg" width="500"/>
+<img src="NUS.jpg" width="400"/>
 
 ## Citing MAN
 If you find MAN useful in your research, please consider citing:

@@ -1,1 +1,4 @@
-In this work, there are two sub-networks, one for image modality and the other for text modality. The convolutional layers have the same configuration with 19-layer VGGNet [29] for image sub-network and the sentence CNN [37] for text sub-network as mentioned in Section 3.2.
+In this work, there are two sub-networks, one for image modality and the other for text modality. The convolutional layers have the same configuration with 19-layer VGGNet [29] for image sub-network and the sentence CNN [37] for text sub-network as mentioned in Section 3.2. We adopt a 19-
+layer VGGNet [29] to learn the representations of the samples and obtain a 4, 096-dimensional representation vector
+outputted by the fc7 layer of the VGGNet for each image. For representing text samples, we use the sentence
+CNN [37] to learn a 300-dimensional representation vector for each text.

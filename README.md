@@ -10,8 +10,8 @@ Liangli Zhen*, Peng Hu*, Xu Wang, Dezhong Peng, [Deep Supervised Cross-modal Ret
 <!--## Result
 ![Result](pascal_sentence_results.png)-->
 ## Result
-Performance comparison in terms of mAP scores on the NUS-WIDE-10K dataset. The highest score is shown in boldface.
-<img src="NUS.jpg" width="400"/>
+Performance comparison in terms of mAP scores on the Pascal Sentence dataset. The highest score is shown in boldface.
+<img src="Result.jpg" width="400"/>
 
 ## Citing DSCMR
 If you find MAN useful in your research, please consider citing:

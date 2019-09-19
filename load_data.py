@@ -1,5 +1,5 @@
 from torch.utils.data.dataset import Dataset
-from scipy.io import loadmat
+from scipy.io import loadmat, savemat
 from torch.utils.data import DataLoader
 import numpy as np
 
@@ -39,6 +39,8 @@ def get_loader(path, batch_size):
     text_test = loadmat(path + "test_txt.mat")['test_txt']
     label_train = loadmat(path+"train_img_lab.mat")['train_img_lab']
     label_test = loadmat(path + "test_img_lab.mat")['test_img_lab']
+
+
     label_train = ind2vec(label_train).astype(int)
     label_test = ind2vec(label_test).astype(int)
 
@@ -58,9 +60,9 @@ def get_loader(path, batch_size):
     num_class = label_train.shape[1]
 
     input_data_par = {}
-    input_data_par['img_test'] = img_test[-462::, :]
-    input_data_par['text_test'] = text_test[-462::, :]
-    input_data_par['label_test'] = label_test[-462::, :]
+    input_data_par['img_test'] = img_test
+    input_data_par['text_test'] = text_test
+    input_data_par['label_test'] = label_test
     input_data_par['img_train'] = img_train
     input_data_par['text_train'] = text_train
     input_data_par['label_train'] = label_train
@@ -68,4 +70,3 @@ def get_loader(path, batch_size):
     input_data_par['text_dim'] = text_dim
     input_data_par['num_class'] = num_class
     return dataloader, input_data_par
-
